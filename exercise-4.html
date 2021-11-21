@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 4 - Appending HTML Contents using jQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('p').append("<a href=''>Read more...</a>")
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                ($('#container').append("Advanced Programming "))
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <button type="button">Append Text</button>
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+            Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.
+        </p>
+
+        <p>
+            Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum
+            risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti.
+        </p>
+    </div>
+</body>
+
+</html>

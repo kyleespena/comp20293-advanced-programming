@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 5 - Removing the Contents using jQuery</title>
+    <style>
+        .container {
+            padding: 10px;
+            background: #f0e68C;
+            border: 1px solid #bead18;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("button").click(function(){
+                $('.container').empty();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Advanced Programming</h1>
+        <p class="hint">
+            <strong>Note:</strong> If you click the button it will remove all the contents of the container
+            including the button.
+        </p>
+        <button type="button">Let's make it empty</button>
+    </div>
+</body>
+
+</html>
